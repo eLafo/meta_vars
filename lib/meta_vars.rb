@@ -36,7 +36,7 @@ module MetaVars
             end
           end
 
-          def find_meta_var(var_name, namespace='#{default_namespace}')
+          def find_meta_#{method_name}(var_name, namespace='#{default_namespace}')
             @#{container_name}.find([namespace,var_name].join('.'))
           end
 
